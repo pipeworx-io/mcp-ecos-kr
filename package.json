@@ -1,0 +1,20 @@
+{
+  "name": "@pipeworx/mcp-ecos-kr",
+  "version": "0.1.0",
+  "description": "ECOS — Bank of Korea Economic Statistics System.",
+  "type": "module",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "ecos-kr"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pipeworx-io/mcp-ecos-kr"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  }
+}
