@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-ecos-kr",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "ECOS — Bank of Korea Economic Statistics System.",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-9bbd2a1ece11133c80918b7e808db05a2910e90dda1f29c3dba65d4b61609937",
-    "sourceCommit": "76aa8f5d9b5dc2f665563030647c68e661478864"
+    "sourceHash": "v1-1a0e2036ed7f6b43466030826025208d1c71ba0fd83b44696f32c2fc9711c811",
+    "sourceCommit": "4fa4c64448be06f4a2ee4cee19f756f3558a7cad"
   }
 }
