@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-ecos-kr",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "description": "ECOS — Bank of Korea Economic Statistics System.",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-ecos-kr": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "ecos-kr"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-ecos-kr.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/ecos-kr",
   "pipeworx": {
-    "sourceHash": "v1-f45a600bd882823fa3ced99b4c752170c6788e366a6ca54cb5fb8c4a25c07b95",
-    "sourceCommit": "29fb434ca65fe0f61191f19c3502f583f5fb99d7"
+    "mode": "gateway",
+    "slug": "ecos-kr",
+    "gatewaySlug": "ecos-kr",
+    "sourceHash": "v1-c366849683bc77f8852ffb652ba39acfef544a5ac6e2e5ebee584d0ac0d4c5df",
+    "sourceCommit": "bb047243cf27f32453103de186b8e6a8b6a1ce79"
   }
 }
